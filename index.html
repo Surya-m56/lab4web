@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sunrise and Sunset DashBoard</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Sunrise and Sunset DashBoard</h1>
+        
+        <form class="form" id="formId">
+            <div>
+                <div class="mb-0">Enter Location :</div>
+                <input class="input" type="text" id="locationInput" placeholder="e.g., New York City" required>
+                <button type="submit" class="btn" id="searchButton">Search</button>
+            </div>
+        </form>
+        <div class="mt-15 m-flex">
+            <div class="flex">
+                <div class="p-10 bold">Day</div>
+                <div class="p-10 bold">Sunrise</div>
+                <div class="p-10 bold">Sunset</div>
+                <div class="p-10 bold">Dawn</div>
+                <div class="p-10 bold">Dusk</div>
+                <div class="p-10 bold">Day Length</div>
+                <div class="p-10 bold">Solar Noon</div>
+                <div class="p-10 bold">Timezone</div>
+            </div>
+            <div class="flex" id="today">
+                <div class="p-10 bold">Today</div>
+            </div>
+            <div class="flex" id="tomorrow">
+                <div class="p-10 bold">Tomorrow</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
